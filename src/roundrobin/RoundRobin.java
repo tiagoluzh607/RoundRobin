@@ -23,7 +23,7 @@ public class RoundRobin {
         
         
         Tarefa escovarOsDentes = new Tarefa("escovarOsDentes",11, 2);
-        Tarefa jogarZelda = new Tarefa("jogarZelda",11, 2);
+        Tarefa jogarZelda = new Tarefa("jogarZelda",20, 2);
         
         tarefas.add(escovarOsDentes);
         tarefas.add(jogarZelda);
