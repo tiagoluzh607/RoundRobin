@@ -24,13 +24,18 @@ public class RoundRobin {
         
         Tarefa escovarOsDentes = new Tarefa("escovarOsDentes",11, 2);
         Tarefa jogarZelda = new Tarefa("jogarZelda",20, 2);
+        Tarefa escutandoRock = new Tarefa("escutandoRock",20, 4);
+        Tarefa fechandoUmaMarmita = new Tarefa("fechandoUmaMarmita",20, 8);
         
         tarefas.add(escovarOsDentes);
         tarefas.add(jogarZelda);
+        tarefas.add(escutandoRock);
+        tarefas.add(fechandoUmaMarmita);
         
         while(!TerminouAExecucaoDeTodasAsTarefas(tarefas)){
             for (Tarefa tarefa : tarefas) {
                 tarefa.Executar();
+                System.out.println("--------------------------------------------------------------");
             }
         }
         
