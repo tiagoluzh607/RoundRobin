@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class RoundRobin {
 
     /**
+     * Roda um sistema simulando um round-robin
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -42,6 +43,11 @@ public class RoundRobin {
             
     }
     
+    /**
+     * Verifica se todas as tarefas terminaram sua execução
+     * @param tarefas recebe como parâmetro uma lista de tarefas para verificar se já executaram
+     * @return 
+     */
     private static boolean TerminouAExecucaoDeTodasAsTarefas(ArrayList<Tarefa> tarefas){
         
         for (Tarefa tarefa : tarefas) {
