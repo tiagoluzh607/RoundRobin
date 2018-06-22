@@ -26,11 +26,11 @@ public class RoundRobin {
         tarefas.add(escovarOsDentes);
         
         
-        
-        for (Tarefa tarefa : tarefas) {
-            tarefa.Executar();
+        while(escovarOsDentes.getTempoExecucao() > 0){
+            for (Tarefa tarefa : tarefas) {
+                tarefa.Executar();
+            }
         }
-        
         
             
     }

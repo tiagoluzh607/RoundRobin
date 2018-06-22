@@ -24,6 +24,10 @@ public class Tarefa {
         this.quantum = quantum;
     }
     
+    public int getTempoExecucao(){
+        return tempoExecucao;
+    }
+    
     public void Executar(){
         
         for (int i = 0; i < this.quantum; i++) {
