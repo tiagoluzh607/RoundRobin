@@ -22,7 +22,7 @@ public class RoundRobin {
         ArrayList<Tarefa> tarefas = new ArrayList();
         
         
-        Tarefa escovarOsDentes = new Tarefa("escovarOsDentes",10, 2);
+        Tarefa escovarOsDentes = new Tarefa("escovarOsDentes",11, 2);
         tarefas.add(escovarOsDentes);
         
         

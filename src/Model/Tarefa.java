@@ -27,9 +27,12 @@ public class Tarefa {
     public void Executar(){
         
         for (int i = 0; i < this.quantum; i++) {
-            tempoExecucao--;
-            System.out.println("Nome: "+ this.nome + " | TempoRestante: " +tempoExecucao);
-            Dormir();
+            
+            if(!TerminouAExecucao()){
+                tempoExecucao--;
+                System.out.println("Nome: "+ this.nome + " | TempoRestante: " +tempoExecucao);
+                Dormir();
+            }
         }
         
     }
