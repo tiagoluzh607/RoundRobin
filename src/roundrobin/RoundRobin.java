@@ -28,13 +28,25 @@ public class RoundRobin {
         tarefas.add(escovarOsDentes);
         tarefas.add(jogarZelda);
         
-        while(!escovarOsDentes.TerminouAExecucao()){
+        while(!TerminouAExecucaoDeTodasAsTarefas(tarefas)){
             for (Tarefa tarefa : tarefas) {
                 tarefa.Executar();
             }
         }
         
             
+    }
+    
+    private static boolean TerminouAExecucaoDeTodasAsTarefas(ArrayList<Tarefa> tarefas){
+        
+        for (Tarefa tarefa : tarefas) {
+            if(!tarefa.TerminouAExecucao()){
+                return false;
+            }
+        }
+        
+        return true;
+        
     }
     
 }
