@@ -23,11 +23,7 @@ public class Tarefa {
         this.tempoExecucao = tempoExecucao;
         this.quantum = quantum;
     }
-    
-    public int getTempoExecucao(){
-        return tempoExecucao;
-    }
-    
+        
     public void Executar(){
         
         for (int i = 0; i < this.quantum; i++) {
@@ -38,6 +34,10 @@ public class Tarefa {
         
     }
 
+    public boolean TerminouAExecucao(){
+        return (tempoExecucao == 0);
+    }
+    
     private void Dormir() {
         try {
             Thread.sleep(700);
@@ -45,6 +45,7 @@ public class Tarefa {
             Logger.getLogger(Tarefa.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
     
     
 }

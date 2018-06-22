@@ -26,7 +26,7 @@ public class RoundRobin {
         tarefas.add(escovarOsDentes);
         
         
-        while(escovarOsDentes.getTempoExecucao() > 0){
+        while(!escovarOsDentes.TerminouAExecucao()){
             for (Tarefa tarefa : tarefas) {
                 tarefa.Executar();
             }
